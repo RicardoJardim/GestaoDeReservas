@@ -1,0 +1,853 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content */
+
+.modal-content {
+  text-align: center;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 1%;
+  border: 1px solid #888;
+  width: 50%;
+}
+
+/* The Close Button */
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.show {
+  display: block;
+}
+
+.notShow {
+  display: none;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.modal-body {
+  padding: 2px 16px;
+}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.4em;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 0.5em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: darkslategrey;
+  border-radius: 0.5em;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #36383a;
+}
+
+.containerGuestWelcome {
+  font-family: "Nunito", sans-serif;
+  height: 100vh;
+}
+
+.containerGuestWelcome body {
+  background-color: white;
+  color: #4b5053;
+  font-family: "Nunito", sans-serif;
+  font-weight: 200;
+  height: 100vh;
+  margin: 0;
+}
+
+.containerGuestWelcome .full-height {
+  height: 90vh;
+  -webkit-box-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.containerGuestWelcome .content {
+  text-align: center;
+}
+
+.containerGuestWelcome .title {
+  font-size: 84px;
+  margin-top: 55px;
+  font-family: "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.containerGuestWelcome .links {
+  position: absolute;
+  right: 10px;
+  top: 18px;
+}
+
+.containerGuestWelcome .links a {
+  color: #4b5053;
+  padding: 0 25px;
+  font-size: 0.8em;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.containerGuestWelcome .links a:hover {
+  letter-spacing: 0.2rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  text-decoration: underline;
+  color: white;
+}
+
+.containerGuestWelcome .midleLinks {
+  display: -webkit-box;
+  display: flex;
+}
+
+.containerGuestWelcome .midleLinks .item {
+  display: block;
+  text-align: center;
+  size: auto;
+  margin-right: 3%;
+  margin-left: 3%;
+  margin-top: 3%;
+  max-width: 300px;
+}
+
+.containerGuestWelcome .midleLinks .item img {
+  width: 20%;
+}
+
+.containerGuestWelcome .midleLinks .item a {
+  color: black;
+  padding: 0 25px;
+  font-size: 1.2em;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.containerGuestWelcome .midleLinks .item a:hover {
+  letter-spacing: 0.1em;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  text-decoration: underline;
+  font-size: 1.4em;
+  color: white;
+}
+
+.containerGuestWelcome .m-b-md {
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: flex;
+  text-align: right;
+  max-width: 900px;
+  max-height: 225px;
+  position: relative;
+}
+
+.containerGuestWelcome #image-logo {
+  position: absolute;
+  left: -1.4em;
+}
+
+.containerGuestWelcome #size {
+  width: 20%;
+}
+
+.containerGuestWelcome .stetho {
+  width: 25%;
+  margin-right: 10%;
+  margin-left: 7%;
+}
+
+.containerGuestWelcome footer {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  text-align: center;
+}
+
+.containerGuestWelcome footer a {
+  color: #1b1b1b;
+}
+
+.containerGuestWelcome footer a:hover {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  text-decoration: underline;
+  color: white;
+}
+
+.containerGuestWelcome .rotate-vert-center {
+  -webkit-animation: rotate-vert-center 3s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite both;
+  animation: rotate-vert-center 3s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite both;
+}
+
+@-webkit-keyframes rotate-vert-center {
+  0% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+  }
+
+  100% {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes rotate-vert-center {
+  0% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+  }
+
+  100% {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+
+.containerGuestWelcome .text-focus-in {
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.contactContainer {
+  font-family: "Nunito", sans-serif;
+}
+
+.contactContainer .header {
+  text-align: center;
+  background-size: 100%;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+  border-top: groove #27bdf0;
+  border-bottom: groove #27bdf0;
+  color: white;
+  font-size: 30px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.contactContainer .body {
+  margin: 0px;
+  height: 90vh;
+}
+
+.contactContainer .body h2 {
+  text-align: center;
+  font-size: 40px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.contactContainer .body .midleLinks {
+  display: -webkit-box;
+  display: flex;
+  background-color: lightgrey;
+  margin: 2%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-bottom: 5%;
+  padding-left: 0%;
+  padding-top: 3%;
+  border: solid grey;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 4px;
+}
+
+.contactContainer .body .midleLinks .item {
+  display: block;
+  text-align: center;
+  margin-left: 8%;
+  width: 500px;
+}
+
+.contactContainer .body .midleLinks .item > h3 {
+  font-family: "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 2em;
+  color: black;
+  margin-bottom: 0px;
+}
+
+.contactContainer .body .midleLinks .item textarea {
+  border-radius: 4px;
+  width: 100%;
+  height: 100px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  background-color: #f8f8f8;
+  resize: vertical;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contactContainer .body .midleLinks .item textarea:focus {
+  border: 3px solid #555;
+}
+
+.contactContainer .body .midleLinks .item input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contactContainer .body .midleLinks .item input[type=text]:focus {
+  border: 3px solid #555;
+}
+
+.contactContainer .body .midleLinks .item #input {
+  margin-bottom: 0%;
+}
+
+.contactContainer .body .midleLinks .item input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contactContainer .body .midleLinks .item input[type=email]:focus {
+  border: 3px solid #555;
+}
+
+.contactContainer .body .midleLinks .item button {
+  background-color: #6cb2eb;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 5px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  /* Safari */
+  width: 100%;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 2px;
+  border: #ddd solid 1px;
+  margin-top: 1%;
+}
+
+.contactContainer .body .midleLinks .item button:hover {
+  background-color: lightblue;
+  border: #6cb2eb solid 1px;
+  color: black;
+  border: 2px solid #6cb2eb;
+}
+
+.contactContainer .body .midleLinks .item .button1:hover {
+  background-color: lightblue;
+  color: white;
+}
+
+.contactContainer .body .midleLinks .item a {
+  color: #4b5053;
+  padding: 0 25px;
+  font-size: 1.2em;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.contactContainer .body .midleLinks .item a:hover {
+  letter-spacing: 0.1em;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  text-decoration: underline;
+  font-size: 1.4em;
+  color: #3490dc;
+}
+
+.contactContainer .body .midleLinks .item hr {
+  margin-right: 2%;
+  border: 1px solid grey;
+  margin-right: 10%;
+}
+
+.contactContainer .body .container1 {
+  display: block;
+  padding-top: 15%;
+  padding-left: 4%;
+  margin-right: 5%;
+}
+
+.contactContainer .body .container1 img {
+  width: 20px;
+  height: 20px;
+}
+
+.contactContainer .body .container1 p {
+  margin-left: 20%;
+  font-size: 18px;
+}
+
+.contactContainer .body .item1 {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: baseline;
+          align-items: baseline;
+}
+
+.contactContainer .body .item1 #p {
+  margin-left: 20%;
+}
+
+.contactContainer .body .container2 {
+  display: block;
+  padding-left: 35%;
+  padding-top: 2%;
+}
+
+.contactContainer .body .container2 img {
+  width: 20px;
+  height: 20px;
+}
+
+.contactContainer .body .item2 {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: center;
+          justify-content: center;
+  margin-left: 4%;
+  margin-right: auto;
+}
+
+.helpPage {
+  height: 300%;
+}
+
+.helpPage .headerhelp {
+  font-family: "Nunito", sans-serif;
+  background-size: 100%;
+  background-position: center;
+  border-top: groove #27bdf0;
+  border-bottom: groove #27bdf0;
+  color: white;
+  line-height: 0.2;
+  height: 200px;
+}
+
+.helpPage .headerhelp .maintitle {
+  width: 80%;
+  margin-left: 10%;
+  font-size: 4em;
+  font-weight: bold;
+}
+
+.helpPage .headerhelp .abstract {
+  width: 80%;
+  margin-left: 10%;
+  font-size: 1.2em;
+  line-height: 1;
+}
+
+.helpPage .headerhelp .abstract a {
+  color: white;
+  -webkit-text-decoration: underline white;
+          text-decoration: underline white;
+}
+
+.helpPage .headerhelp .abstract a:hover {
+  -webkit-text-decoration: underline #6cb2eb;
+          text-decoration: underline #6cb2eb;
+}
+
+.helpPage .helpContainer {
+  font-family: "Nunito", sans-serif;
+  width: 100%;
+  margin-left: auto;
+  text-align: center;
+  margin-right: auto;
+  height: 80vh;
+}
+
+.helpPage .helpContainer .question {
+  background-color: white;
+  color: #444;
+  cursor: pointer;
+  padding: 26px;
+  width: 80%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1.4em;
+  font-weight: bold;
+  border-bottom: 2px solid lightgrey;
+}
+
+.helpPage .helpContainer .question:after {
+  content: "+";
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.helpPage .helpContainer .active:after {
+  content: "\2212";
+}
+
+.helpPage .helpContainer .active,
+.helpPage .helpContainer .question:hover {
+  background-color: #ccc;
+}
+
+.helpPage .helpContainer .answer {
+  width: 80%;
+  margin-left: auto;
+  text-align: left;
+  margin-right: auto;
+  font-size: 1.2em;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.helpPage .helpContainer .answer p {
+  padding: 0px 15px;
+}
+
+.aboutContainer {
+  font-family: "Nunito", sans-serif;
+  height: 300%;
+}
+
+.aboutContainer .header {
+  text-align: center;
+  background-size: 100%;
+  background-position: center;
+  border-top: groove #27bdf0;
+  border-bottom: groove #27bdf0;
+  color: white;
+  font-size: 30px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.aboutContainer .body {
+  margin: 0px;
+}
+
+.aboutContainer .body .m-b-md {
+  padding-left: 5%;
+  display: -webkit-box;
+  display: flex;
+  text-align: right;
+  max-width: 900px;
+  max-height: 225px;
+}
+
+.aboutContainer .body h2 {
+  text-align: center;
+  font-size: 40px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.aboutContainer .body p {
+  text-align: center;
+  margin-left: 12%;
+  margin-right: 12%;
+}
+
+.aboutContainer .body .sub-body {
+  background-color: lightgray;
+  margin-left: 14%;
+  margin-right: 14%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.aboutContainer .body .sub-body h2 {
+  font-size: 30px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.aboutContainer .body .sub-body p {
+  margin-left: 2%;
+  margin-right: 5%;
+  margin-bottom: 2%;
+}
+
+.aboutContainer .body .sub-body img {
+  width: 25%;
+  margin-right: 5%;
+  margin-top: auto;
+  margin-bottom: 5%;
+  margin-left: 17%;
+}
+
+.aboutContainer .body .sub-body div {
+  padding-bottom: 0px;
+}
+
+h2:before,
+h2:after {
+  content: "";
+  border-top: 2px solid;
+  margin: 0 20px 0 0;
+  -webkit-box-flex: 1;
+          flex: 1 0 20px;
+}
+
+h2:after {
+  margin: 0 0 0 20px;
+}
+
+.loginCont {
+  font-family: "Nunito", sans-serif;
+  -webkit-box-align: center;
+          align-items: center;
+  display: block;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+.loginCont h2 {
+  text-align: center;
+}
+
+.loginForm {
+  font-family: "Nunito", sans-serif;
+  border: 3px solid #9e9e9e;
+  border-radius: 4px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 5px 10px 10px #d6d6d6;
+}
+
+.loginForm label {
+  margin-left: 5%;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.loginForm label[for=remember] {
+  margin-left: 0;
+}
+
+.loginForm input {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-left: 5%;
+}
+
+.loginForm .loginput {
+  width: 40%;
+  padding: 12px 20px;
+  display: block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 4px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  font-size: 1em;
+}
+
+.loginForm .invalid {
+  border-color: red;
+  background-color: #d87171;
+}
+
+.loginForm .invalid:focus {
+  border-color: red;
+}
+
+.loginForm .loginput:focus {
+  width: 90%;
+}
+
+.loginForm .logButton {
+  background-color: #3490dc;
+  font-family: "Nunito", sans-serif;
+  color: white;
+  padding: 12px 18px;
+  margin-left: 10%;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  border: none;
+  cursor: pointer;
+  width: 80%;
+  font-size: 1.1em;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  border-radius: 4px;
+}
+
+.loginForm .logButton:hover {
+  opacity: 0.8;
+}
+
+.loginForm a {
+  color: #4b5053;
+  padding: 0 25px;
+  font-size: 1.2em;
+  text-decoration: underline;
+  margin-bottom: 2%;
+}
+
+.loginForm a:hover {
+  color: #3490dc;
+}
+
+.logItem {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.feedback {
+  color: red;
+  margin-left: 5%;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #6cb2eb;
+  font-family: "Nunito", sans-serif;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a:active {
+  background-color: #757575;
+  color: white;
+}
+
+.topnav .goLeft {
+  float: right;
+}
+
+body {
+  margin: 0px;
+  font-family: "Nunito", sans-serif;
+}
+

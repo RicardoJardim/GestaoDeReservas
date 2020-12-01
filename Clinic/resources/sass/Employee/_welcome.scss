@@ -1,0 +1,116 @@
+.welcomePage {
+    text-align: center;
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%23ffffff' cx='50' cy='0' r='50'/%3E%3Cg fill='%23faf8ff' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23f4f1ff' cx='50' cy='100' r='50'/%3E%3Cg fill='%23efeaff' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23e9e3ff' cx='50' cy='200' r='50'/%3E%3Cg fill='%23e3dcff' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%23ded6ff' cx='50' cy='300' r='50'/%3E%3Cg fill='%23d8cfff' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23d2c8ff' cx='50' cy='400' r='50'/%3E%3Cg fill='%23ccc1ff' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23c6bbff' cx='50' cy='500' r='50'/%3E%3Cg fill='%23c0b4ff' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23b9adff' cx='50' cy='600' r='50'/%3E%3Cg fill='%23b3a7ff' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23aca0ff' cx='50' cy='700' r='50'/%3E%3Cg fill='%23a59aff' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%239e93ff' cx='50' cy='800' r='50'/%3E%3Cg fill='%23978dff' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%238f87ff' cx='50' cy='900' r='50'/%3E%3Cg fill='%238780ff' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%237f7aff' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+    .cred {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        h2 {
+            margin-left: 1em;
+            margin-right: 1em;
+        }
+    }
+    table {
+        margin-left: auto;
+        margin-right: auto;
+
+        display: flex;
+        flex-flow: column;
+        width: 90%;
+        padding: 0.3em;
+        height: 75vh;
+        td,
+        th {
+            height: 50px;
+            width: 100%;
+        }
+        thead {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: white;
+            font-size: 1.1em;
+            text-align: center;
+            border-radius: 5px 5px 0px 0px;
+            width: 99.25%;
+            display: table;
+            table-layout: fixed;
+            z-index: 50px;
+            background-color: #6c7ae0;
+            -webkit-box-shadow: 6px -7px 20px 5px rgba(212, 212, 212, 1);
+            -moz-box-shadow: 6px -7px 20px 5px rgba(212, 212, 212, 1);
+            box-shadow: 6px -7px 20px 5px rgba(212, 212, 212, 1);
+        }
+
+        tbody {
+            font-size: 1em;
+            border-radius: 0px 0px 5px 5px;
+            text-align: center;
+            display: block;
+            overflow-y: scroll;
+            background-color: white;
+            -webkit-box-shadow: 6px 15px 20px 5px rgba(212, 212, 212, 1);
+            -moz-box-shadow: 6px 15px 20px 5px rgba(212, 212, 212, 1);
+            box-shadow: 6px 15px 20px 5px rgba(212, 212, 212, 1);
+
+            tr {
+                width: 100%;
+                display: table;
+                table-layout: fixed;
+            }
+            tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+            td {
+                overflow-x: auto;
+            }
+
+            tr:hover {
+                background-color: #ddd;
+            }
+        }
+        button {
+            width: 100%;
+            height: 2.8em;
+            box-shadow: inset 0px 1px 0px 0px #bbdaf7;
+            background-color: #6c7ae0;
+            border-radius: 3px;
+            border: 1px solid #84bbf3;
+            display: inline-block;
+            cursor: pointer;
+            color: #ffffff;
+            font-family: Arial;
+            font-size: 1em;
+            font-weight: bold;
+
+            text-decoration: none;
+            text-shadow: 0px 1px 0px #528ecc;
+        }
+        button:hover {
+            background-color: #378de5;
+        }
+        button:active {
+            position: relative;
+            top: 1px;
+        }
+        .size {
+            width: 15%;
+        }
+    }
+
+    .changedContent {
+        input {
+            width: 80%;
+            height: 2em;
+            margin-bottom: 1em;
+        }
+    }
+}

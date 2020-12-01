@@ -1,0 +1,479 @@
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content */
+
+.modal-content {
+  text-align: center;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 1%;
+  border: 1px solid #888;
+  width: 50%;
+}
+
+/* The Close Button */
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.show {
+  display: block;
+}
+
+.notShow {
+  display: none;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.modal-body {
+  padding: 2px 16px;
+}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.4em;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 0.5em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: darkslategrey;
+  border-radius: 0.5em;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #36383a;
+}
+
+.admin {
+  font-family: "Nunito", sans-serif;
+  padding-top: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.admin .admin-name > h1 {
+  color: #333333;
+  font-weight: 600;
+  font-size: 50px;
+}
+
+.admin .admin-name hr {
+  margin-top: 2%;
+  border: 2px solid #6cb2eb;
+}
+
+.admin .admin-name p {
+  margin-left: 1%;
+}
+
+.admin .admin-table .size {
+  height: 50px;
+  width: 40%;
+}
+
+.admin .admin-table #email {
+  overflow: auto;
+}
+
+.admin .admin-table .table-container {
+  padding: 0.3em;
+  height: 70vh;
+}
+
+.admin .admin-table h2 {
+  text-align: center;
+  font-size: 40px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.admin .admin-table h2:before,
+.admin .admin-table h2:after {
+  content: "";
+  border-top: 2px solid;
+  margin: 0 20px 0 0;
+  -webkit-box-flex: 1;
+          flex: 1 0 20px;
+}
+
+.admin .admin-table h2:after {
+  margin: 0 0 0 20px;
+}
+
+.admin .admin-table table {
+  width: 100%;
+  height: 65vh;
+  border-collapse: collapse;
+}
+
+.admin .admin-table table td,
+.admin .admin-table table th {
+  height: 50px;
+  width: 100%;
+}
+
+.admin .admin-table table thead {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 1.1em;
+  text-align: center;
+  border-radius: 5px 5px 0px 0px;
+  width: 99.25%;
+  display: table;
+  table-layout: fixed;
+  z-index: 50px;
+  background-color: #6c7ae0;
+  box-shadow: 6px -7px 20px 5px #d4d4d4;
+}
+
+.admin .admin-table table tbody {
+  font-size: 1em;
+  border-radius: 0px 0px 5px 5px;
+  text-align: center;
+  display: block;
+  overflow-y: scroll;
+  background-color: white;
+  box-shadow: 6px 15px 20px 5px #d4d4d4;
+}
+
+.admin .admin-table table tbody tr {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+}
+
+.admin .admin-table table tbody td {
+  overflow-x: auto;
+}
+
+.admin .admin-table table tbody button {
+  width: 100%;
+  height: 2.8em;
+  box-shadow: inset 0px 1px 0px 0px #bbdaf7;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #79bbff), to(#378de5));
+  background: linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+  background-color: #79bbff;
+  border-radius: 3px;
+  border: 1px solid #84bbf3;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #528ecc;
+}
+
+.admin .admin-table table tbody button:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #378de5), to(#79bbff));
+  background: linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+  background-color: #378de5;
+}
+
+.admin .admin-table table tbody button:active {
+  position: relative;
+  top: 1px;
+}
+
+.admin .admin-table table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.admin .admin-table table tbody tr:hover {
+  background-color: #ddd;
+}
+
+.admin .admin-table table tbody tr:active {
+  background-color: #4253d7;
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+}
+
+.admin #sendmedic fieldset {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 2%;
+}
+
+.admin #sendmedic input {
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid grey;
+  font-size: 15px;
+}
+
+.admin #sendmedic label {
+  font-size: 20px;
+  color: grey;
+}
+
+.admin #sendmedic textarea:focus,
+.admin #sendmedic input:focus {
+  outline: none;
+}
+
+.admin #sendmedic .container {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.admin #sendmedic .container .item {
+  display: -webkit-box;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.admin #sendmedic .container .item .ajust-left {
+  margin-left: 11rem;
+}
+
+.admin #sendmedic .container .item .ajust-left1 {
+  margin-left: 16.3rem;
+}
+
+.admin #sendemployee fieldset {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.admin #sendemployee input {
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid grey;
+  font-size: 15px;
+}
+
+.admin #sendemployee label {
+  font-size: 20px;
+  color: grey;
+}
+
+.admin #sendemployee textarea:focus,
+.admin #sendemployee input:focus {
+  outline: none;
+}
+
+.admin #sendemployee .container {
+  padding: 1rem;
+  padding-left: 2rem;
+  display: block;
+}
+
+.admin #sendemployee .container .item {
+  display: -webkit-box;
+  display: flex;
+  margin-left: 1rem;
+}
+
+.admin #sendemployee .container .item .ajust-left {
+  margin-left: 11rem;
+}
+
+.admin .test {
+  margin-top: 0.5rem;
+}
+
+.admin .test button {
+  width: 10rem;
+  box-shadow: inset 0px 1px 0px 0px #bbdaf7;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #79bbff), to(#378de5));
+  background: linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+  background-color: #79bbff;
+  border-radius: 3px;
+  border: 1px solid #84bbf3;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 5px 15px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #528ecc;
+}
+
+.admin .test button:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #378de5), to(#79bbff));
+  background: linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+  background-color: #378de5;
+}
+
+.admin .test button:active {
+  position: relative;
+  top: 1px;
+}
+
+body {
+  margin: 0px;
+  font-family: "Nunito", sans-serif;
+}
+
+.sidenav {
+  font-family: "Nunito", sans-serif;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 17%;
+  background: #37474f;
+  height: 100%;
+  overflow: auto hidden;
+  max-width: 17%;
+}
+
+.sidenav > a {
+  display: block;
+  text-align: left;
+  text-decoration: none;
+  font-size: 1.1em;
+  background: none;
+  border-bottom: 1px solid #455a64;
+  color: #cfd8dc;
+  padding: 16px 24px;
+  text-transform: uppercase;
+}
+
+.sidenav > a img {
+  width: 10%;
+  margin-right: 2%;
+  padding-left: 10%;
+}
+
+.sidenav > a:hover {
+  background-color: #757575;
+  color: black;
+}
+
+.sidenav > a:active {
+  background-color: #4d4d4d;
+  color: white;
+}
+
+.sidenav header {
+  background-color: #263238;
+  font-size: 1.3em;
+  text-align: center;
+  padding: 16px 24px;
+}
+
+.sidenav header a {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+}
+
+.sidenav header a:hover {
+  text-decoration: underline;
+}
+
+.sidenav button {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2em;
+  background: none;
+  border: none;
+  color: #fff;
+  padding: 16px 24px;
+  background-color: #263238;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.sidenav button img {
+  width: 10%;
+}
+
+.sidenav button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  border: none;
+}
+
+.sidenav form {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+main {
+  margin-left: 17%;
+  overflow: auto;
+}
+
+.adminHome {
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+}
+
+.adminHome .text {
+  width: 70%;
+  margin: auto;
+  margin-top: 1%;
+}
+
+.adminHome .text h3 {
+  text-align: justify;
+}
+
+.adminHome .text h3 > strong {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
