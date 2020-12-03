@@ -2,6 +2,9 @@
 
 Este projeto consiste num website para gestão de reversas num ambiente de uma clinica, com o objectivo de criar uma ligação mais eficiente e intuitivaentre  essas  clınicas  e  os  utentes,  focando-se,  essencialmente,  nas  melhorias do sistema de reservas.
 
+
+![alt text](https://github.com/RicardoJardim/GestaoDeReservas/blob/main/diagramacontextual.png "Diagrama")
+
 ## Comandos base de dados
 //Commandos da Base de dados
 
