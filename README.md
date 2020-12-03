@@ -1,7 +1,8 @@
-# ACR
+# Website de Gestão de reservas e pacientes em clínica privada 
 
-Website de Gestão de reservas e pacientes em clínica privada
+Este projeto consiste num website para gestão de reversas num ambiente de uma clinica, com o objectivo de criar uma ligação mais eficiente e intuitivaentre  essas  clınicas  e  os  utentes,  focando-se,  essencialmente,  nas  melhorias do sistema de reservas.
 
+## Comandos base de dados
 //Commandos da Base de dados
 
 base de dados -> Clinic_db
