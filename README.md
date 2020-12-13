@@ -22,8 +22,7 @@ php artisan migrate:reset //Se quiserem resetar a base de dados
 
 Já fiz alguns teste e até agora parece que as ligações estão bem feitas
 
-É preciso meter a pasta "vendor" no projeto -> Criar um projeto laravel 5.8 -> Apagar tudo e deixar a pasta "vendor" -> pull do Git
-
+Composer install
 # Styling SCSS
 
 <!-- STYLING SCSS -->
